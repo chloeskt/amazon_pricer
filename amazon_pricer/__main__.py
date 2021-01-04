@@ -1,3 +1,5 @@
+import argparse
+
 from dotenv import load_dotenv
 
 from amazon_pricer.amazon_pricer import AmazonPricer
@@ -6,8 +8,6 @@ load_dotenv()
 
 
 def parse_args():
-    import argparse
-
     parser = argparse.ArgumentParser(
         description="Amazon Price Scraper",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
