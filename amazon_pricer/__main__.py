@@ -1,6 +1,6 @@
 from dotenv import load_dotenv
 
-from amazon_pricer.amazon_scraper import AmazonPricer
+from amazon_pricer.amazon_pricer import AmazonPricer
 
 load_dotenv()
 
