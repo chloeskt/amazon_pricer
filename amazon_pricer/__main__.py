@@ -47,3 +47,4 @@ if __name__ == "__main__":
             url=item["url"], headers=headers, current_price=item["current_price"]
         )
         amazon_pricer.check_price()
+        print(f"Check has been done, if the price has decreased you will receive an email!")
