@@ -20,8 +20,8 @@ class AmazonPricer:
         server.ehlo()
 
         server.login(os.getenv("EMAIL_ADDRESS"), os.getenv("PASSWORD"))
-        subject = f"Price of {title} has gone DOWN!"
-        body = f"The price of the wanted article has done down, check the following link {self.URL}"
+        subject = "Price has gone DOWN!"
+        body = f"The price of the wanted article {title} has done down, check the following link {self.URL}"
         msg = f"Subject: {subject} \n\n {body}"
 
         server.sendmail(os.getenv("EMAIL_ADDRESS"), os.getenv("EMAIL_RECEIVER"), msg)
