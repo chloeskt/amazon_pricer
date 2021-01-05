@@ -8,12 +8,22 @@ import unidecode
 
 
 class AmazonPricer:
+    """
+    Class which allows to retrieve given Amazon item price and sends a mail
+    when the price has decreased under the currennt price.
+    """
     def __init__(self, url: str, headers: Dict[str, str], current_price: float):
         self.URL = url
         self.HEADERS = headers
         self.CURRENT_PRICE = current_price
 
-    def send_mail(self, title: str):
+    def send_mail(self, title: str) -> None:
+        """
+        Send mail to given "EMAIL_RECEIVER".
+
+        :param title: str
+            Title of the Amazon product.
+        """
         server = smtplib.SMTP("smtp.gmail.com", 587)
         server.ehlo()
         server.starttls()
@@ -27,7 +37,10 @@ class AmazonPricer:
         server.sendmail(os.getenv("EMAIL_ADDRESS"), os.getenv("EMAIL_RECEIVER"), msg)
         server.quit()
 
-    def check_price(self):
+    def check_price(self) -> None:
+        """
+        Check the price of an Amazon product given its URL.
+        """
         page = requests.get(self.URL, headers=self.HEADERS)
         soup = BeautifulSoup(page.content, "html.parser")
         title = soup.find(id="productTitle").get_text().strip()

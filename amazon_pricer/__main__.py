@@ -10,6 +10,7 @@ load_dotenv()
 
 
 def parse_args():
+    """Arguments parser."""
     parser = argparse.ArgumentParser(
         description="Amazon Price Scraper",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
