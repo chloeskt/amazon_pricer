@@ -1,7 +1,15 @@
 - Corsair K70 MK2:
+    current_price: 186.23
     url: https://www.amazon.fr/Corsair-RAPIDFIRE-M%C3%A9canique-R%C3%A9tro-%C3%89clairage-Multicolore/dp/B07HX99ZL6?ref_=ast_sto_dp&th=1
-    current_price: 188.98
 - Chaise SIHOO:
-    url: https://www.amazon.fr/SIHOO-Ergonomique-Ordinateur-Protection-Appui-t%C3%AAte/dp/B07GNDDNMW/ref=pd_vtp_196_1/262-6129439-6376061?_encoding=UTF8&pd_rd_i=B07GNDDNMW&pd_rd_r=f19c9250-8b8f-4c70-b013-a66eb827b89f&pd_rd_w=j7Cq2&pd_rd_wg=BjFQq&pf_rd_p=d5223afe-1e0c-4a36-b13d-30661b0f79b3&pf_rd_r=ZS1S6W4AJ362QX5PM0HF&psc=1&refRID=ZS1S6W4AJ362QX5PM0HF
     current_price: 199.99
-
+    url: https://www.amazon.fr/SIHOO-Ergonomique-Ordinateur-Protection-Appui-t%C3%AAte/dp/B07GNDDNMW/ref=pd_vtp_196_1/262-6129439-6376061?_encoding=UTF8&pd_rd_i=B07GNDDNMW&pd_rd_r=f19c9250-8b8f-4c70-b013-a66eb827b89f&pd_rd_w=j7Cq2&pd_rd_wg=BjFQq&pf_rd_p=d5223afe-1e0c-4a36-b13d-30661b0f79b3&pf_rd_r=ZS1S6W4AJ362QX5PM0HF&psc=1&refRID=ZS1S6W4AJ362QX5PM0HF
+- The Last of Us II:
+    current_price: 39.9
+    url: https://www.amazon.fr/The-Last-Of-Us-2/dp/B0777XHSRJ/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2L5KX9AMEFI2U&dchild=1&keywords=the+last+of+us+2+ps4&qid=1609919837&quartzVehicle=72-827&replacementKeywords=the+last+of+us+ps4&sprefix=the+last+of+us+%2Caps%2C177&sr=8-1
+- Cyberpunk:
+    current_price: 52.8
+    url: https://www.amazon.fr/Cyberpunk-2077-Edition-D1-PS4/dp/B07R5NSN73/ref=sr_1_15?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2L5KX9AMEFI2U&dchild=1&keywords=the+last+of+us+2+ps4&qid=1609919837&quartzVehicle=72-827&replacementKeywords=the+last+of+us+ps4&sprefix=the+last+of+us+%2Caps%2C177&sr=8-15
+- Gaming SSD:
+    current_price: 221.99
+    url: https://www.amazon.fr/WD_Black-P10-5To-biblioth%C3%A8que-fonctionne/dp/B07YFGTDV4/ref=sr_1_23?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2L5KX9AMEFI2U&dchild=1&keywords=the%2Blast%2Bof%2Bus%2B2%2Bps4&qid=1609919837&quartzVehicle=72-827&replacementKeywords=the%2Blast%2Bof%2Bus%2Bps4&sprefix=the%2Blast%2Bof%2Bus%2B%2Caps%2C177&sr=8-23&th=1

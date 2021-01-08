@@ -12,10 +12,12 @@ class AmazonPricer:
     Class which allows to retrieve given Amazon item price and sends a mail
     when the price has decreased under the currennt price.
     """
+
     def __init__(self, url: str, headers: Dict[str, str], current_price: float):
         self.URL = url
         self.HEADERS = headers
         self.CURRENT_PRICE = current_price
+        self.new_price = None
 
     def send_mail(self, title: str) -> None:
         """
@@ -54,3 +56,4 @@ class AmazonPricer:
         if price < self.CURRENT_PRICE:
             unaccented_title = unidecode.unidecode(title)
             self.send_mail(unaccented_title)
+            self.new_price = price

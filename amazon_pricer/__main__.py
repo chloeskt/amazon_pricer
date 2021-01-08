@@ -41,11 +41,17 @@ def parse_args():
 if __name__ == "__main__":
     args = parse_args()
     headers = {"User-Agent": args.user_agent}
-    all_items = YamlReader(pathfile=args.filepath_yaml).get_elements()
+    yaml_reader = YamlReader(pathfile=args.filepath_yaml)
+    all_items = yaml_reader.get_elements()
+    i = 0
     for item in all_items:
         print(f"Checking for price changes for {item['name']}")
         amazon_pricer = AmazonPricer(
             url=item["url"], headers=headers, current_price=item["current_price"]
         )
         amazon_pricer.check_price()
-        print(f"Check has been done, if the price has decreased you will receive an email!")
+        print(
+            f"Check has been done, if the price has decreased you will receive an email!"
+        )
+        yaml_reader.add_new_prices(price=amazon_pricer.new_price, idx=i)
+        i += 1
