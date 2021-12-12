@@ -32,7 +32,7 @@ class AmazonPricer:
         server.ehlo()
 
         server.login(os.getenv("EMAIL_ADDRESS"), os.getenv("PASSWORD"))
-        subject = "Price has gone DOWN!"
+        subject = f"Price has gone DOWN! Your favorite article now costs {self.new_price}"
         body = f"The price of the wanted article {title} has done down, check the following link {self.URL}"
         msg = f"Subject: {subject} \n\n {body}"
 
@@ -47,7 +47,7 @@ class AmazonPricer:
         soup = BeautifulSoup(page.content, "html.parser")
         title = soup.find(id="productTitle").get_text().strip()
         price = float(
-            soup.find(id="priceblock_ourprice")
+            soup.find(class_="apexPriceToPay")
             .get_text()
             .split("€")[0]
             .replace(",", ".")
