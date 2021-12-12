@@ -55,5 +55,5 @@ class AmazonPricer:
         )
         if price < self.CURRENT_PRICE:
             unaccented_title = unidecode.unidecode(title)
-            self.send_mail(unaccented_title)
             self.new_price = price
+            self.send_mail(unaccented_title)
